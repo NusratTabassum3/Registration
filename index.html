@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <title>Registration</title>
+  </head>
+  <body
+    class="bg-white font-sans flex items-center justify-center min-h-screen p-4"
+  >
+    <div class="w-full max-w-md space-y-6">
+      <div class="text-center">
+        <h1 class="font-semibold text-3xl">Create an account</h1>
+        <h3 class="text-sm mt-2">
+          Already have an account?
+          <span>
+            <a href="#" class="underline">Log in</a>
+          </span>
+        </h3>
+      </div>
+
+      <!-- from start -->
+      <form action="" class="space-y-5">
+        <div class=" ">
+          <label for="" class="text-md mt-2 block text-gray-600"
+            >What should we call you?</label
+          >
+          <input
+            class="w-full border border-gray-500 rounded-md px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+            type="text"
+            placeholder="Enter your profile name"
+          />
+        </div>
+
+        <div class="">
+          <label for="" class="text-md mt-2 block text-gray-600"
+            >What's your email</label
+          >
+          <input
+            class="w-full border border-gray-500 rounded-md px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+            type="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+
+        <div class="">
+          <label for="" class="text-md mt-2 block text-gray-600"
+            >Create a Password</label
+          >
+          <div class="relative">
+            <input
+              class="w-full border border-gray-500 rounded-md px-5 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+              type="password"
+              id="passwordInput"
+              placeholder="Enter your Password"
+            />
+            <button
+              type="button"
+              id="togglePassword"
+              class="absolute right-4 inset-y-0 flex items-center text-sm text-gray-500"
+            >
+              Show
+            </button>
+          </div>
+
+          <p class="text-xs text-gray-500 mt-2">
+            Use 8 or more charaters with a mix of letters, number&symbols
+          </p>
+        </div>
+
+        <p class="text-xs">
+          By creating an account, you agree to the
+          <span class="underline cursor-pointer">Terms of use </span> and
+          <span class="underline cursor-pointer">Privacy Policy</span>
+        </p>
+
+        <button
+          type="submit"
+          class="w-full bg-gray-400 text-white py-2 rounded-full font-semibold cursor-pointer"
+        >
+          Create an account
+        </button>
+      </form>
+
+      <!-- from end -->
+
+      <!-- socialButton start  -->
+
+      <h3 class="text-gray-600">Or Continue with</h3>
+
+      <div class="flex justify-between gap-2">
+        <button
+          class="flex-1 border border-gray-300 rounded-full py-2 flex items-center justify-center gap-2"
+        >
+          <i class="fab fa-facebook-f text-blue-600 text-sm"></i>
+          <span class="text-sm"> Facebook</span>
+        </button>
+        <button
+          class="flex-1 border border-gray-300 rounded-full py-2 flex items-center justify-center gap-2"
+        >
+          <i class="fab fa-google text-red-500 text-sm"></i>
+
+          <span class="text-sm"> Google</span>
+        </button>
+        <button
+          class="flex-1 border border-gray-300 rounded-full py-2 flex items-center justify-center gap-2"
+        >
+          <i class="fab fa-apple text-gray-800 text-sm"></i>
+          <span class="text-sm">Apple</span>
+        </button>
+      </div>
+
+      <!-- socialButton end -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
